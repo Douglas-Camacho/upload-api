@@ -25,3 +25,15 @@ Content-Type: application/json
 {
     "prompt": "muito incrivel, tudo isso"
 }
+
+###
+
+# @name generate-ai-completion
+POST http://localhost:3333/ai/complete
+Content-Type: application/json
+
+{
+    "videoId": "58b39e0b-0be4-4998-8fae-ade3528a8577",
+    "temperature": 0.5,
+    "template": "Gere um resumo suscinto da transcrição do vídeo informada a seguir: '''{transcription}'''"
+}
